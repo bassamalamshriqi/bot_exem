@@ -1,7 +1,7 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "117e75a43c0515e36c29b9cbd94134a14bd7d481"
+TOKEN = "433265853:AAEjyWRYbleDzAfxHHI4SufJfzLt5kzq4b0"
 
 questions = [
     {
@@ -51,4 +51,5 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, answer))
 
 app.run_polling()
+
 
